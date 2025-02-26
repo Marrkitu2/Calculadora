@@ -76,3 +76,12 @@ function factorial() {
     }
     display.value = result;
 }
+
+function setMode(mode) {
+    const calculator = document.querySelector('.calculator');
+    if (mode === 'scientific') {
+        calculator.classList.add('scientific-mode');
+    } else {
+        calculator.classList.remove('scientific-mode');
+    }
+}
