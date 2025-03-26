@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.calculator {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: width 0.3s;
+}
+
+.calculator.scientific-mode {
+  width: 500px;
+}
+
+.display {
+  background-color: #222;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+}
+
+.display input {
+  width: 100%;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.mode-buttons button {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mode-buttons button:hover {
+  background-color: #ddd;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}
+
+.scientific {
+  display: none;
+}
+
+.calculator.scientific-mode .scientific {
+  display: grid;
+}
